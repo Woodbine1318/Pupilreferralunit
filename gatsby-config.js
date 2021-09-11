@@ -17,15 +17,18 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'GCN',
-    description:
-      'A starter template to build amazing static websites with Gatsby, Contentful and Netlify',
-    siteUrl: 'https://gcn.netlify.com',
+    title: 'Pupil Referral Unit',
+    description: 'Pupil Referral Unit',
+    siteUrl: 'https://pupilreferralunit.co.uk',
     image: '/images/share.jpg',
     menuLinks: [
       {
-        name: 'Home',
+        name: 'Pupil Referral Unit',
         slug: '/',
+      },
+      {
+        name: 'Blog',
+        slug: '/blog',
       },
       {
         name: 'About',
@@ -82,8 +85,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
-        short_name: 'GCN',
+        name: 'Pupil Referral Unit',
+        short_name: 'PRU',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',

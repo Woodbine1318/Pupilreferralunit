@@ -43,14 +43,14 @@ const PostTemplate = ({ data, pageContext }) => {
       />
       <Hero title={title} image={heroImage} height={'50vh'} />
       <Container>
-        {tags && <TagList tags={tags} basePath={basePath} />}
+        {tags && <TagList tags={tags} basePath={''} />}
         <PostDetails
           date={publishDate}
           timeToRead={body.childMarkdownRemark.timeToRead}
         />
         <PageBody body={body} />
       </Container>
-      <PostLinks previous={previous} next={next} basePath={basePath} />
+      <PostLinks previous={previous} next={next} basePath={''} />
     </Layout>
   )
 }
