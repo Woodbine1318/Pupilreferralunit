@@ -16,7 +16,7 @@ module.exports = async ({ graphql, actions }) => {
     const prev = i === 0 ? null : posts[i - 1].node
 
     createPage({
-      path: `${basePath === '/' ? '' : basePath}/${post.node.slug}/`,
+      path: `/blog/${post.node.slug}/`,
       component: path.resolve(`./src/templates/post.js`),
       context: {
         slug: post.node.slug,
